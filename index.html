@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll sebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">WORK</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <h2 id="text">Moon Light</h2>
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2> Parallox Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error voluptatibus beatae ut doloribus?
+            Quaerat tempore dolorum quisquam libero itaque aliquid atque distinctio.<br><br>Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Et deserunt placeat illo, nulla amet impedit iure voluptatum modi repellat!
+            Natus, provident? Impedit ea error libero quas quia, rem natus debitis? Quisquam deserunt tempora optio
+            adipisci Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et molestias nulla dicta quidem sequi,
+            tempora illo dolorum. Iste, natus incidunt! Exercitationem autem facilis ut labore nulla! Tenetur, minus?
+            Praesentium hic amet dignissimos expedita, qui aspernatur. <br><br>Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Et deserunt placeat illo, nulla amet impedit iure voluptatum modi repellat! Natus,
+            provident? Impedit ea error libero quas quia, rem natus debitis? Quisquam deserunt tempora optio adipisci
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et molestias nulla dicta quidem sequi, tempora
+            illo dolorum. Iste, natus incidunt! Exercitationem autem facilis ut labore nulla! Tenetur, minus?
+            Praesentium hic amet dignissimos expedita, qui aspernatur<br><br>Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Et deserunt placeat illo, nulla amet impedit iure voluptatum modi repellat! Natus,
+            provident? Impedit ea error libero quas quia, rem natus debitis? Quisquam deserunt tempora optio adipisci
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et molestias nulla dicta quidem sequi, tempora
+            illo dolorum. Iste, natus incidunt! Exercitationem autem facilis ut labore nulla! Tenetur, minus?
+            Praesentium hic amet dignissimos expedita, qui aspernaturLorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Et deserunt placeat illo, nulla amet impedit iure voluptatum modi repellat! Natus, provident? Impedit
+            ea error libero quas quia, rem natus debitis? Quisquam deserunt tempora optio adipisci Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Et molestias nulla dicta quidem sequi, tempora illo dolorum. Iste, natus
+            incidunt! Exercitationem autem facilis ut labore nulla! Tenetur, minus? Praesentium hic amet dignissimos
+            expedita, qui aspernatur<br>
+            <br<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et molestias nulla dicta quidem sequi,
+                tempora illo dolorum. Iste, natus incidunt! Exercitationem autem facilis ut labore nulla! Tenetur,
+                minus? Praesentium hic amet dignissimos expedita, qui aspernatur Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Et molestias nulla dicta quidem sequi, tempora illo dolorum. Iste, natus incidunt!
+                Exercitationem autem facilis ut labore nulla! Tenetur, minus? Praesentium hic amet dignissimos expedita,
+                qui aspernatur.<br><br>
+        </p>
+    </div>
+
+
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountain_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountain_front = document.getElementById('mountain_front');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+           // mountains_behind.style.top = value * 0.5 + 'px';
+          //  mountain_front.style.top = value * 0 + 'px';
+
+             text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+
+            btn.style.marginto = value * 1.5 + 'px';
+        })
+
+    </script>
+</body>
+
+</html>
